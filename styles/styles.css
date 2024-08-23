@@ -7,6 +7,13 @@ body {
     padding: 30px 50px 30px;
     box-sizing: border-box;
 }
+.btn-primary{
+    background-color: #fb8601;
+    color: white;
+    border-radius: 10px;
+    border-color: #fb8601;
+    padding: 10px 10px 10px;
+  }
 
 /* Navbar styles */
 .navbar {
@@ -41,13 +48,13 @@ body {
 }
 
 .nav-links a {
-    color: #fb8601;
+    color: rgba(78, 78, 78, 0.966); 
     text-decoration: none;
     font-size: 1rem;
 }
 
 .nav-links a:hover {
-    color: black;
+    color: #fb8601;
 }
 
 /* Hamburger menu icon */
@@ -64,6 +71,54 @@ body {
     margin: 4px 0;
 }
 
+/* Header Styles Start */
+
+.header-container{
+    margin-top: 50px;
+    width: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Linear gradient */
+        url(../Resources/Images/header-banner.png); /* Background image */
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    background-size: cover; /* Ensures both gradient and image cover the same area */
+    background-position: center; /* Centers the background image */
+    border-radius: 10px;
+}
+.header-content{
+    text-align: center;
+    padding: 25px 25px 25px;
+    color: white;
+}
+.header-content h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.search-bar{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 6px 10px 6px 30px;
+    
+}
+.search-bar-content{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+}
+.input-div{
+    background-color: #fff;
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     .nav-links {
