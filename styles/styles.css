@@ -14,6 +14,10 @@ body {
     border-radius: 10px;
     padding: 10px 30px 10px;
   }
+  .span1{
+    color: #fb8601;
+    font-weight: bolder;
+  }
 
 /* Navbar styles */
 .navbar {
@@ -142,8 +146,51 @@ body {
     color: #333;
 }
 
+/* First banner style start */
+
+.first-banner-container{
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+}
+.first-banner-content{
+    padding: 10px 70px 25px;
+    color: #484848;
+}
+.first-banner-description{
+    width:100%;
+    padding: 15px 15px 15px;
+}
+.first-banner-img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
+    .hide{
+        display: none;
+    }
     .nav-links {
         display: none;
     }
@@ -151,4 +198,5 @@ body {
     .menu-icon {
         display: flex;
     }
+   
 }
