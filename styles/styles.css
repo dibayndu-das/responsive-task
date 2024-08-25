@@ -307,19 +307,85 @@ body {
     background-position: center;
     border-radius: 10px;
 }
+.deals-banner-container2{
+    background-image: url(../Resources/Images/Group\ 39\ -\ Copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    background-position: center;
+    border-radius: 10px;
+}
+
 .deal-banner1-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
     padding: 30px 30px 30px;
+}
+.deal-banner2-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
+    padding: 30px 30px 30px;
+}
+.deals-title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.deals-title h1{
+    margin-bottom: 25px;
 }
 .banner-description1{
     background: rgba(255, 255, 255, 0.769);
-    width: 50%;
+    width: 40%;
     border-radius: 10px;
-    padding: 20px 20px 20px;
+    padding: 20px 80px 20px;
     
 }
+.banner-description2{
+    background: rgba(255, 255, 255, 0.769);
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px 80px 20px;
+   
+}
 .day-person-place{
+    margin-top: 50px;
     display: flex;
     gap: 30px;
+}
+
+.banner-content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.banner-content h3{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.banner-content p{
+    margin-top: 15px;
+}
+.banner-content h4{
+    margin-top: 15px;
+    color: #fb8601;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.deals-button{
+    margin-top: 25px;
+    text-align: center;
 }
 
 
@@ -384,5 +450,35 @@ body {
         flex-direction: column;
     }
 
-   
+
+    .banner-description1 {
+        width: 90%;
+        padding: 15px;
+    }
+    .banner-description2 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .day-person-place {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .banner-content h3 {
+        font-size: 18px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .banner-content h4 {
+        font-size: 16px;
+    }
 }
+   
