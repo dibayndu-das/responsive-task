@@ -391,48 +391,99 @@ body {
 
 /* <!-- Newsletter Section styles starts --> */
 
-.newsletter-container{
+.newsletter-container {
     margin-top: 50px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* Ensures both children stretch to the same height */
 }
 
-.newsletter-form{
-    margin-top: 50px;
-    border: 1px solid #fb8601;
-    width: 100%;
-    padding: 20px 20px 20px;
-    border-radius: 10px;
+.newsletter-form, .newsletter-img {
+    flex: 1;
+    max-width: 50%; /* Ensure both take up half the container */
+    box-sizing: border-box;
 }
-.form{
+
+.newsletter-form {
+    border: 1px solid #fb8601;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: left;
-    align-items: left;
-    margin-top: 20px;
+    justify-content: center;
 }
-.form input{
-    width: 93%;
-    background-color: #9a989883;
-    border: 0;
-    outline: 0;
-    padding: 20px 20px 20px;
-    border-radius: 10px;
+
+.newsletter-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-.subscribe-btn{
+
+.newsletter-form p {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscribe-btn {
     background-color: #fb8601;
     color: white;
-    border: 0;
-    border-radius: 10px;
-    padding: 10px 30px 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+.newsletter-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.img-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
+.newsletter-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
 
+.discount-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fb8601;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotate(-10deg);
+}
+
+.discount-badge p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.discount-badge h3 {
+    margin: 0;
+    font-size: 20px;
+}
 
 
 
@@ -516,5 +567,17 @@ body {
     .banner-content h4 {
         font-size: 16px;
     }
+
+
+    .newsletter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form, .newsletter-img {
+        max-width: 100%;
+        margin-bottom: 20px; /* Adds spacing between stacked items */
+    }
+
 }
    
